@@ -121,3 +121,21 @@ body {
 .head {
     background-color: rgb(49, 230, 205);
 }
+
+.main {
+    height: 91vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxes {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F74700;
+}

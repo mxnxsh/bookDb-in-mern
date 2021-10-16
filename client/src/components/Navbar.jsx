@@ -4,7 +4,7 @@ import Cookies from 'js-cookie'
 function Navbar() {
     const logout = () => {
         Cookies.remove('user');
-        window.location.reload()
+        window.location.assign("http:localhost:3000/")
     }
 
     if (Cookies.get('user')) {
@@ -33,6 +33,7 @@ function Navbar() {
                                         <Link class="dropdown-item" to='/favourite'>Favourites</Link>
                                         <Link class="dropdown-item" to='/userBooks'>My Books</Link>
                                         <Link class="dropdown-item" to='/addbook'>Add Book</Link>
+                                        <Link class="dropdown-item" to='/dashboard'>Dashboard</Link>
                                         <a class="dropdown-item" onClick={logout}>Logout</a>
                                     </div>
                                 </li>
