@@ -9,6 +9,7 @@ import Addform from "./components/Addform";
 import Editform from "./components/Editform";
 import Main from "./components/Main";
 import Buy from "./components/Buy";
+import Dashboard from "./components/Dashboard";
 
 export default function App() {
   return (
@@ -36,6 +37,9 @@ export default function App() {
           </Route>
           <Route path="/userBooks">
             <Buy />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
           </Route>
           <Route path="/">
             <Main />
